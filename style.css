@@ -1,0 +1,115 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: antenna;
+  src: url(./assets/fonts/ford-antenna-medium-58955836e60d2.otf);
+}
+
+@font-face {
+  font-family: benton-sans;
+  src: url(./assets/fonts/BentonSans\ Comp\ Regular.otf);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-family: antenna;
+}
+
+img {
+  width: 100%;
+}
+
+div {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+section {
+  margin: 0 auto;
+  position: relative;
+}
+
+#popup {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  text-align: center;
+  padding: 35px 30px 30px;
+
+  width: calc(100% - 30px);
+
+  background: #1c1b1b;
+  color: #fff;
+  box-shadow: 0 1px 4px #0000004d;
+
+  z-index: 50;
+}
+
+#popup h2 {
+  font-family: antenna;
+  font-size: 22px;
+  line-height: 41px;
+  text-transform: uppercase;
+
+  margin-bottom: 2rem;
+}
+
+#popup i {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+#popup p {
+  margin-bottom: 1rem;
+
+  font-size: 14px;
+  font-family: benton-sans;
+  letter-spacing: 2px;
+}
+
+#popup form {
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 2rem;
+}
+
+#popup form input {
+  padding: 12px 14px;
+  margin-bottom: 20px;
+
+  border: 1px solid #ddd;
+  background: transparent;
+}
+
+#popup form button {
+  font-family: antenna;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.64px;
+
+  background-color: #fff;
+
+  padding: 18px 48px;
+
+  cursor: pointer;
+}
+
+@media screen and (min-width: 1000px) {
+  #popup {
+    max-width: 385px;
+  }
+
+  #popup h2 {
+    font-size: 37px;
+  }
+}
